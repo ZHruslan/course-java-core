@@ -26,7 +26,9 @@ public class StringUtilTest {
     @MethodSource("provideArguments")
     void glueTest(String str1, String str2, String expected) {
         StringUtil stringUtil = new StringUtil();
+
         String actual = stringUtil.glue(str1, str2);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -44,7 +46,9 @@ public class StringUtilTest {
     @MethodSource("provideArgumentsSerchIndex")
     void serchSymbalByTest(String str, char symbal, int expected) {
         StringUtil stringUtil = new StringUtil();
+
         int actual = stringUtil.serchSymbalBy(str, symbal);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -63,7 +67,9 @@ public class StringUtilTest {
     @MethodSource("provideEquals")
     void equalsObjectTest(String str1, String str2, boolean expected) {
         StringUtil stringUtil = new StringUtil();
+
         boolean actual = stringUtil.equalsObject(str1, str2);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -81,7 +87,9 @@ public class StringUtilTest {
     @MethodSource("provideDelete")
     void deleteSpaceAndUpperCaseTest(String str1, String expected) {
         StringUtil stringUtil = new StringUtil();
+
         String actual = stringUtil.deleteSpaceAndUpperCase(str1);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -97,7 +105,9 @@ public class StringUtilTest {
     @MethodSource("provideSubstring")
     void GetSubStringTest(String str, int startSymbal, int endSymbal, String expected) {
         StringUtil stringUtil = new StringUtil();
+
         String actual = stringUtil.subString(str, startSymbal, endSymbal);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -114,7 +124,9 @@ public class StringUtilTest {
     @MethodSource("provideSwitchSymbal")
     void switchSymbalTest(String str1, String expected) {
         StringUtil stringUtil = new StringUtil();
+
         String actual = stringUtil.switchSymbal(str1);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -132,7 +144,9 @@ public class StringUtilTest {
     @MethodSource("providestartAndEndWord")
     void startAndEndWordTest(String str, String startOrEndWord, boolean expected) {
         StringUtil stringUtil = new StringUtil();
+
         boolean actual = stringUtil.startAndEndWord(str, startOrEndWord);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -149,7 +163,9 @@ public class StringUtilTest {
     @MethodSource("providenumberOfVowels")
     void numberOfVowelsTest(String str, int expected) {
         StringUtil stringUtil = new StringUtil();
+
         int actual = stringUtil.numberOfVowels(str);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -166,7 +182,9 @@ public class StringUtilTest {
     @MethodSource("providepunctuationMarks")
     void punctuationMarksTest(String str, int expected) {
         StringUtil stringUtil = new StringUtil();
+
         int actual = stringUtil.punctuationMarks(str);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -184,7 +202,9 @@ public class StringUtilTest {
     @MethodSource("providepalindrom")
     void providepalindromTest(String str, boolean expected) {
         StringUtil stringUtil = new StringUtil();
+
         boolean actual = stringUtil.palindrom(str);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -203,7 +223,9 @@ public class StringUtilTest {
     @MethodSource("providesplitString")
     void providesplitStringTest(String str, int n, String[] expected) {
         StringUtil stringUtil = new StringUtil();
+
         String[] actual = stringUtil.splitString(str, n);
+
         Assertions.assertEquals(Arrays.toString(expected), Arrays.toString(actual));
     }
 
@@ -220,7 +242,9 @@ public class StringUtilTest {
     @MethodSource("providecountWord")
     void providecountWord(String str, int expected) {
         StringUtil stringUtil = new StringUtil();
+
         int actual = stringUtil.countWord(str);
+
         Assertions.assertEquals(expected, actual);
     }
 
@@ -237,7 +261,9 @@ public class StringUtilTest {
     @MethodSource("providefirstNameLastName")
     void providefirstNameLastName(String str, String expected) {
         StringUtil stringUtil = new StringUtil();
+
         String actual = stringUtil.firstNameLastName(str);
+
         Assertions.assertEquals(expected, actual);
     }
 }
